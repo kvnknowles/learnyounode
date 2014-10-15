@@ -1,15 +1,9 @@
-http = require('http')
+var http = require('http')
+var bl = require('bl')
 
 http.get(process.argv[2], function(response) {
-  message = ""
-  response.setEncoding('utf8')
-  response.on('data', function(data) {
-    message += data;   
-  });
-  response.on('end', function(data) {
-    console.log(message.length);
-    console.log(message);
-  });
-
-  response.on('error', console.error)
+  response.pipe(bl(function (err, data) {
+    console.log(data.toString().length);
+    console.log(data.toString());
+  }));
 });
