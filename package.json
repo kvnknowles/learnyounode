@@ -1,0 +1,26 @@
+{
+  "name": "learnyounode_walkthrough",
+  "version": "0.0.1",
+  "description": "Learnyounode via nodeschool.io",
+  "dependencies": {
+    "bl": "^0.9.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kvnknowles/learnyounode.git"
+  },
+  "keywords": [
+    "tutorial",
+    "learning",
+    "node"
+  ],
+  "author": "Kevin Knowles",
+  "bugs": {
+    "url": "https://github.com/kvnknowles/learnyounode/issues"
+  },
+  "homepage": "https://github.com/kvnknowles/learnyounode"
+}
